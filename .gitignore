@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# no subir carpeta especificas
+ projects/aprendiendo-react
