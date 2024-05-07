@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # no subir carpeta especificas
- projects/aprendiendo-react
+ projects/aprendiendo-react/*
