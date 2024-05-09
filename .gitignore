@@ -131,3 +131,6 @@ dist
 
 # no subir carpeta especificas
  projects/aprendiendo-react/*
+
+ # ignotar workspace vscode
+ aprendiendoREACT.code-workspace
