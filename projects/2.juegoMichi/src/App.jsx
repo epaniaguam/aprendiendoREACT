@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Square } from "./components/Square";
 import "./App.css";
 import { WinnerModal } from "./components/WinnerModal";
-import { checkWinner, checkEndGame } from "./logic/board";
+import { checkEndGame, checkWinner } from "./logic/board";
 import { TURNS } from "./logic/constants";
 import { removeFromLocalStorage, saveinLocalStorage } from "./logic/storage";
 
