@@ -61,7 +61,7 @@ export function ContadorRegresivo({ fecha }) {
 
   return (
     <div className="contador">
-      <h2>REGRESAMOS EN</h2>
+      <h2 className="text-3xl ">REGRESAMOS EN</h2>
       <div className="time">
         <span className="numeros">{dias}</span>
         <span className="numeros">:</span>
