@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       {/* <Cronometro /> */}
-      {/* <ContadorRegresivo fecha={"07/19/2024 23:48"} /> */}
+      <ContadorRegresivo fecha={"07/19/2024 23:48"} />
       {/* <ObtenerHora /> */}
       <Footter />
     </div>

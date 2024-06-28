@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import "./ContadorRegresivo.css";
 
 export function ContadorRegresivo({ fecha }) {
   const DATE_TARGET = new Date(fecha.toString());
@@ -60,23 +59,27 @@ export function ContadorRegresivo({ fecha }) {
   const formatearNumero = (numero) => numero.toString().padStart(2, "0");
 
   return (
-    <div className="contador">
-      <h2 className="text-3xl ">REGRESAMOS EN</h2>
-      <div className="time">
-        <span className="numeros">{dias}</span>
-        <span className="numeros">:</span>
-        <span className="numeros">{formatearNumero(horas)}</span>
-        <span className="numeros">:</span>
-        <span className="numeros">{formatearNumero(minutos)}</span>
-        <span className="numeros">:</span>
-        <span className="numeros">{formatearNumero(segundos)}</span>
-        <span className="sub-texto">Días</span>
-        <span className="sub-texto"></span>
-        <span className="sub-texto">Horas</span>
-        <span className="sub-texto"></span>
-        <span className="sub-texto">Minutos</span>
-        <span className="sub-texto"></span>
-        <span className="sub-texto">Segundos</span>
+    <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/3">
+      <h2 className="text-4xl mb-3">REGRESAMOS EN</h2>
+      <div className="time grid grid-rows-2 gap-2 justify-items-center text-white ">
+        <div className="text-7xl grid grid-cols-7 gap-2 justify-items-center">
+          <span>{dias}</span>
+          <span className="gap-1">:</span>
+          <span>{formatearNumero(horas)}</span>
+          <span className="gap-1">:</span>
+          <span>{formatearNumero(minutos)}</span>
+          <span className="gap-1">:</span>
+          <span>{formatearNumero(segundos)}</span>
+        </div>
+        <div className="text-s grid grid-cols-7 gap-2 justify-items-center">
+          <span>Días</span>
+          <span></span>
+          <span>Horas</span>
+          <span></span>
+          <span>Minutos</span>
+          <span></span>
+          <span>Segundos</span>
+        </div>
       </div>
     </div>
   );
